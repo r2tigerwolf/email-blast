@@ -71,7 +71,7 @@ class SendMail
                 
                 $mail->Subject = 'This is the title';
                 $mail->Body    = 'Hello<br/><br/> This is a test body';
-                $mail->AltBody = 'Hello, My name is Robert Dabu, and I am looking for a web developer position.  I have attached my Resume and Cover letter. Thank you.';
+                $mail->AltBody = 'Hello, This is a test body.';
                 
                 echo $row["email_address"] . "<br/>";
                 if($mail->send()) {
